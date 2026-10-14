@@ -10,6 +10,7 @@ import TechnologyPage from "../pages/TechnologyPage";
 import LessonPage from "../pages/LessonPage";
 import BookmarksPage from "../pages/BookmarksPage";
 import ProgressPage from "../pages/ProgressPage";
+import ApiLabPage from "../pages/ApiLabPage";
 
 export default function AppRouter() {
   return (
@@ -25,6 +26,7 @@ export default function AppRouter() {
         />
         <Route path="/bookmarks" element={<BookmarksPage />} />
         <Route path="/progress" element={<ProgressPage />} />
+        <Route path="/api-lab" element={<ApiLabPage />} />
       </Route>
 
       <Route path="/login" element={<LoginPage />} />

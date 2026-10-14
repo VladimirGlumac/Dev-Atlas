@@ -2,6 +2,14 @@ import type { Technology } from "../types/learning";
 
 export const technologies: Technology[] = [
   {
+    id: "git-github",
+    name: "Git & GitHub",
+    slug: "git-github",
+    description:
+      "Version control, branching, collaboration, remote repositories and professional Git workflows.",
+    status: "available",
+  },
+  {
     id: "typescript",
     name: "TypeScript",
     slug: "typescript",
@@ -23,6 +31,14 @@ export const technologies: Technology[] = [
     slug: "redux-toolkit",
     description:
       "Global client state, slices, selectors, async workflows and architecture.",
+    status: "available",
+  },
+  {
+    id: "tanstack-query",
+    name: "TanStack Query",
+    slug: "tanstack-query",
+    description:
+      "Server-state management, caching, queries, mutations and synchronization for React applications.",
     status: "available",
   },
   {
