@@ -273,22 +273,22 @@ export default function TaskMutationLab() {
 
             <pre className="mt-2 whitespace-pre-wrap text-xs leading-6 text-slate-500">
               {`mutate(input)
-↓
-mutationFn(input)
-↓
-createTask()
-↓
-server state changes
-↓
-onSuccess
-↓
-invalidateQueries()
-↓
-query refetch
-↓
-cache updates
-↓
-UI rerenders`}
+                ↓
+                mutationFn(input)
+                ↓
+                createTask()
+                ↓
+                server state changes
+                ↓
+                onSuccess
+                ↓
+                invalidateQueries()
+                ↓
+                query refetch
+                ↓
+                cache updates
+                ↓
+                UI rerenders`}
             </pre>
           </div>
 
@@ -299,22 +299,20 @@ UI rerenders`}
 
             <pre className="mt-2 whitespace-pre-wrap text-xs leading-6 text-slate-500">
               {`mutate(id)
-↓
-mutationFn(id)
-↓
-toggleTask(id)
-↓
-server state changes
-↓
-onSuccess
-↓
-invalidateQueries()
-↓
-query refetch
-↓
-cache updates
-↓
-UI rerenders`}
+                ↓
+                mutationFn(id)
+                ↓
+                toggleTask(id)
+                ↓
+                server returns updated task
+                ↓
+                onSuccess(updatedTask)
+                ↓
+                setQueryData()
+                ↓
+                cache updates directly
+                ↓
+                UI rerenders`}
             </pre>
           </div>
 
@@ -325,22 +323,20 @@ UI rerenders`}
 
             <pre className="mt-2 whitespace-pre-wrap text-xs leading-6 text-slate-500">
               {`mutate(id)
-↓
-mutationFn(id)
-↓
-deleteTask(id)
-↓
-server state changes
-↓
-onSuccess
-↓
-invalidateQueries()
-↓
-query refetch
-↓
-cache updates
-↓
-UI rerenders`}
+                ↓
+                mutationFn(id)
+                ↓
+                deleteTask(id)
+                ↓
+                server returns deleted id
+                ↓
+                onSuccess(id)
+                ↓
+                setQueryData()
+                ↓
+                remove task from cache
+                ↓
+                UI rerenders`}
             </pre>
           </div>
         </div>
