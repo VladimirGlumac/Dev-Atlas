@@ -60,4 +60,14 @@ export const tanStackQuerySections: LearningSection[] = [
       "Build real API exercises using queries, mutations, pagination and cache synchronization.",
     order: 6,
   },
+
+  {
+    id: "tanstack-production",
+    technologyId: "tanstack-query",
+    title: "Production",
+    slug: "production",
+    description:
+      "Patterns and checks for maintainable, predictable and production-ready TanStack Query usage.",
+    order: 6,
+  },
 ];

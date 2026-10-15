@@ -54,15 +54,15 @@ export const tanStackQueryLessons: Lesson[] = [
     order: 4,
   },
 
-  // Lifecycle
+  // Query Lifecycle
   {
     id: "tanstack-query-states",
     technologyId: "tanstack-query",
     sectionId: "tanstack-query-lifecycle",
     title: "Pending, Error & Success",
-    slug: "query-states",
+    slug: "pending-error-success",
     description:
-      "Model loading, error and successful query states correctly in the UI.",
+      "Understand the core query states and how they map to production UI.",
     difficulty: "beginner",
     status: "published",
     order: 1,
@@ -82,13 +82,13 @@ export const tanStackQueryLessons: Lesson[] = [
   },
 
   {
-    id: "tanstack-enabled",
+    id: "tanstack-conditional-queries",
     technologyId: "tanstack-query",
     sectionId: "tanstack-query-lifecycle",
     title: "Conditional Queries",
     slug: "conditional-queries",
     description:
-      "Control when a query should run using enabled and dependent input.",
+      "Control when a query is allowed to execute with enabled and stable inputs.",
     difficulty: "intermediate",
     status: "published",
     order: 3,
@@ -101,7 +101,8 @@ export const tanStackQueryLessons: Lesson[] = [
     sectionId: "tanstack-mutations",
     title: "useMutation",
     slug: "use-mutation",
-    description: "Send create, update and delete operations to remote systems.",
+    description:
+      "Create, update and delete server state with mutation lifecycle callbacks.",
     difficulty: "intermediate",
     status: "published",
     order: 1,
@@ -114,7 +115,7 @@ export const tanStackQueryLessons: Lesson[] = [
     title: "invalidateQueries",
     slug: "invalidate-queries",
     description:
-      "Synchronize cached queries after a mutation changes server data.",
+      "Mark cached queries stale and synchronize them after server mutations.",
     difficulty: "intermediate",
     status: "published",
     order: 2,
@@ -173,6 +174,19 @@ export const tanStackQueryLessons: Lesson[] = [
     order: 1,
   },
 
+  {
+    id: "tanstack-cache-updates",
+    technologyId: "tanstack-query",
+    sectionId: "tanstack-optimistic",
+    title: "Cache Updates & Optimistic Mutations",
+    slug: "cache-updates-optimistic-mutations",
+    description:
+      "Compare invalidation, direct cache updates and optimistic mutations with rollback.",
+    difficulty: "advanced",
+    status: "published",
+    order: 2,
+  },
+
   // Practice
   {
     id: "tanstack-github-api-practice",
@@ -198,5 +212,18 @@ export const tanStackQueryLessons: Lesson[] = [
     difficulty: "intermediate",
     status: "published",
     order: 2,
+  },
+
+  {
+    id: "tanstack-production-best-practices",
+    technologyId: "tanstack-query",
+    sectionId: "tanstack-production",
+    title: "Best Practices & Production Checklist",
+    slug: "best-practices-production-checklist",
+    description:
+      "Apply practical rules for query keys, freshness, cache updates, mutations and production-ready server-state management.",
+    difficulty: "advanced",
+    status: "published",
+    order: 1,
   },
 ];

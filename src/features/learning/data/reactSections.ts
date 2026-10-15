@@ -39,4 +39,22 @@ export const reactSections: LearningSection[] = [
       "Modern React hooks for transitions, optimistic UI and advanced workflows.",
     order: 4,
   },
+  {
+    id: "react-architecture",
+    technologyId: "react",
+    title: "Architecture",
+    slug: "architecture",
+    description:
+      "Organize React applications with clear boundaries, feature-based structure and predictable state ownership.",
+    order: 5,
+  },
+  {
+    id: "react-testing",
+    technologyId: "react",
+    title: "Testing",
+    slug: "testing",
+    description:
+      "Test React applications through user behavior using Vitest and React Testing Library.",
+    order: 6,
+  },
 ];

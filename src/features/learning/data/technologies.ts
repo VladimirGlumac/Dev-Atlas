@@ -42,6 +42,14 @@ export const technologies: Technology[] = [
     status: "available",
   },
   {
+    id: "rest-api",
+    name: "RESTful API",
+    slug: "rest-api",
+    description:
+      "HTTP fundamentals, REST resource design, status codes, pagination, authentication and production API conventions.",
+    status: "available",
+  },
+  {
     id: "nextjs",
     name: "Next.js",
     slug: "nextjs",

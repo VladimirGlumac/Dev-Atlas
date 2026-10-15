@@ -273,22 +273,22 @@ export default function TaskMutationLab() {
 
             <pre className="mt-2 whitespace-pre-wrap text-xs leading-6 text-slate-500">
               {`mutate(input)
-↓
-mutationFn(input)
-↓
-createTask()
-↓
-server state changes
-↓
-onSuccess
-↓
-invalidateQueries()
-↓
-query refetch
-↓
-cache updates
-↓
-UI rerenders`}
+                ↓
+                mutationFn(input)
+                ↓
+                createTask()
+                ↓
+                server state changes
+                ↓
+                onSuccess
+                ↓
+                invalidateQueries()
+                ↓
+                query refetch
+                ↓
+                cache updates
+                ↓
+                UI rerenders`}
             </pre>
           </div>
 
@@ -299,22 +299,29 @@ UI rerenders`}
 
             <pre className="mt-2 whitespace-pre-wrap text-xs leading-6 text-slate-500">
               {`mutate(id)
-↓
-mutationFn(id)
-↓
-toggleTask(id)
-↓
-server state changes
-↓
-onSuccess
-↓
-invalidateQueries()
-↓
-query refetch
-↓
-cache updates
-↓
-UI rerenders`}
+                ↓
+                onMutate(id)
+                ↓
+                cancelQueries()
+                ↓
+                snapshot old cache
+                ↓
+                optimistic setQueryData()
+                ↓
+                UI updates immediately
+                ↓
+                mutationFn(id)
+                ↓
+                server request
+
+                SUCCESS
+                → replace with server result
+
+                ERROR
+                → rollback snapshot
+
+                onSettled
+                → invalidate + sync`}
             </pre>
           </div>
 
@@ -325,22 +332,22 @@ UI rerenders`}
 
             <pre className="mt-2 whitespace-pre-wrap text-xs leading-6 text-slate-500">
               {`mutate(id)
-↓
-mutationFn(id)
-↓
-deleteTask(id)
-↓
-server state changes
-↓
-onSuccess
-↓
-invalidateQueries()
-↓
-query refetch
-↓
-cache updates
-↓
-UI rerenders`}
+                ↓
+                mutationFn(id)
+                ↓
+                deleteTask(id)
+                ↓
+                server state changes
+                ↓
+                onSuccess
+                ↓
+                invalidateQueries()
+                ↓
+                query refetch
+                ↓
+                cache updates
+                ↓
+                UI rerenders`}
             </pre>
           </div>
         </div>
